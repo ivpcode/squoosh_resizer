@@ -49,7 +49,7 @@ let work_dir = process.argv[2];
                         fs.writeFileSync(work_dir + flname, rawEncodedImage)
                         
                         if (subhtml == "")
-                            subhtml = `<img src="${path.basename(work_dir)+flname}"\n\tsrcset="${path.basename(work_dir)+flname} ${dim}w`
+                            subhtml = `<img loading="lazy" src="${path.basename(work_dir)+flname}"\n\tsrcset="${path.basename(work_dir)+flname} ${dim}w`
                         else
                             subhtml += ` ${path.basename(work_dir)+flname} ${dim}w`
                         if (i<dims.length-1)
