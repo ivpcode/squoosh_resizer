@@ -1,0 +1,15 @@
+{
+  "name": "squoosh_resizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sqres.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prez Ivan",
+  "license": "MIT",
+  "dependencies": {
+    "@squoosh/lib": "^0.4.0",
+    "glob": "^7.2.0"
+  }
+}
